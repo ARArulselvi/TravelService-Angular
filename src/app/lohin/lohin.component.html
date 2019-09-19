@@ -1,0 +1,13 @@
+<p>lohin works!</p>
+
+<form #frm="ngForm" (ngSubmit)="validate()">
+    <label for="">User name</label>
+    <input type="text" name='userName' [(ngModel)]='user.userName'>
+    <label for="">Password</label>
+    <input type="password" name='passWord' [(ngModel)]='user.passWord'>
+    
+    <input type="submit" value="login">
+
+</form>
+
+{{status}}
